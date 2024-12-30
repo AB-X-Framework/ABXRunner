@@ -11,8 +11,8 @@
     <groupId>org.example</groupId>
     <artifactId>demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo</name>
-    <description>demo</description>
+    <name>ABXRunner</name>
+    <description>ABX Runner</description>
     <url/>
     <licenses>
         <license/>
@@ -29,6 +29,12 @@
     <properties>
         <java.version>21</java.version>
     </properties>
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -43,6 +49,12 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.AB-X-Framework</groupId>
+            <artifactId>WSArch</artifactId>
+            <version>1.0</version>
         </dependency>
     </dependencies>
 
