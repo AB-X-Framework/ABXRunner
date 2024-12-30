@@ -14,6 +14,18 @@
     <name>ABXRunner</name>
     <description>ABX Runner</description>
     <url/>
+
+
+    <repositories>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/AB-X-Framework/WSAarch</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <licenses>
         <license/>
     </licenses>
