@@ -5,7 +5,7 @@ on:
   pull_request:
 
 permissions:
-  packages: write     # Allows write access to GitHub Packages
+  packages: read   # Allows write access to GitHub Packages
 
 jobs:
   build:
