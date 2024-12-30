@@ -21,14 +21,16 @@ jobs:
         with:
           java-version:  '21.0.5'
 
-      - name: Before
-        run: |
-          cat /home/runner/.m2/settings.xml
+
 
       - name: Settings
         uses: s4u/maven-settings-action@v2.5.0
         with:
           servers: '[{"id": "github","configuration": {"httpHeaders": {"property": {"name": "Authorization","value": "Bearer ${{ secrets.GITHUB_TOKEN }}"}}}}]'
+
+      - name: Before
+        run: |
+          cat /home/runner/.m2/settings.xml
 
       # Step 3: Verify GraalVM installation
       - name: Compile and deploy WSArch
