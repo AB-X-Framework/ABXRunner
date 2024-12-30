@@ -21,6 +21,10 @@ jobs:
         with:
           java-version:  '21.0.5'
 
+      - name: Before
+        run: |
+          cat /home/runner/.m2/settings.xml
+
       - name: Settings
         uses: s4u/maven-settings-action@v2.5.0
         with:
