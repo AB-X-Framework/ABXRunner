@@ -1,4 +1,4 @@
-package com.example.demo;
+package org.abx.runner;
 
 import org.junit.jupiter.api.Test;
 
